@@ -39,7 +39,7 @@
   <text x="32" y="286" class="label">BAL surveillée</text>
   <text x="220" y="286" class="value" text-anchor="end">support-technique@entreprise.fr</text>
   <text x="32" y="306" class="label">Dossiers exclus</text>
-  <text x="380" y="306" class="value" text-anchor="end">Corbeille, Brouillons</text>
+  <text x="380" y="306" class="value" text-anchor="end">     Corbeille, Brouillons</text>
 
   <!-- Section Seuils SLA -->
   <rect x="16" y="340" width="388" height="86" rx="10" fill="#ffffff" stroke="#e1e6e5" stroke-width="1"/>
