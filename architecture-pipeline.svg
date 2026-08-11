@@ -1,0 +1,64 @@
+<svg viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+
+  <rect width="1000" height="620" fill="#ffffff"/>
+
+  <text x="500" y="35" text-anchor="middle" font-size="22" font-weight="700" fill="#1a202c">HORS-SLA — Architecture &amp; Pipeline</text>
+  <text x="500" y="58" text-anchor="middle" font-size="13" fill="#718096">Deux sources d'ingestion → un socle de classification commun → restitution</text>
+
+  <!-- Colonne gauche : Outlook Desktop -->
+  <rect x="40" y="95" width="260" height="90" rx="10" fill="#e6f0ff" stroke="#3b6fd6" stroke-width="1.5"/>
+  <text x="170" y="128" text-anchor="middle" font-size="15" font-weight="600" fill="#1a365d">Outlook Desktop (local)</text>
+  <text x="170" y="150" text-anchor="middle" font-size="12" fill="#2c5282">Add-in VBA (COM Add-in)</text>
+  <text x="170" y="168" text-anchor="middle" font-size="11" fill="#2c5282">Items.Restrict / Find, MailItem,</text>
+  <text x="170" y="182" text-anchor="middle" font-size="11" fill="#2c5282">ConversationIndex, Categories</text>
+
+  <!-- Colonne droite : Outlook Web -->
+  <rect x="700" y="95" width="260" height="90" rx="10" fill="#fff0e6" stroke="#d6733b" stroke-width="1.5"/>
+  <text x="830" y="128" text-anchor="middle" font-size="15" font-weight="600" fill="#7b341e">Outlook Web (OWA)</text>
+  <text x="830" y="150" text-anchor="middle" font-size="12" fill="#9c4221">Office Add-in (Office.js)</text>
+  <text x="830" y="168" text-anchor="middle" font-size="11" fill="#9c4221">Microsoft Graph API</text>
+  <text x="830" y="182" text-anchor="middle" font-size="11" fill="#9c4221">/me/messages, delta query</text>
+
+  <!-- Flèches vers extraction -->
+  <path d="M170,185 L170,240 L470,240" stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+  <path d="M830,185 L830,240 L530,240" stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Bloc extraction -->
+  <rect x="360" y="245" width="280" height="60" rx="10" fill="#edf2f7" stroke="#4a5568" stroke-width="1.5"/>
+  <text x="500" y="270" text-anchor="middle" font-size="14" font-weight="600" fill="#1a202c">Extraction brute normalisée</text>
+  <text x="500" y="288" text-anchor="middle" font-size="11" fill="#4a5568">Schéma de données commun (JSON / table)</text>
+
+  <path d="M500,305 L500,335" stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Bloc classification -->
+  <rect x="330" y="340" width="340" height="75" rx="10" fill="#e9f9ee" stroke="#2f855a" stroke-width="1.5"/>
+  <text x="500" y="365" text-anchor="middle" font-size="14" font-weight="600" fill="#22543d">Moteur de classification</text>
+  <text x="500" y="383" text-anchor="middle" font-size="11" fill="#2f855a">Regroupement conceptuel par objet (règles / mots-clés)</text>
+  <text x="500" y="400" text-anchor="middle" font-size="11" fill="#2f855a">Calcul des délais (arrivée → 1ère réponse / ticket)</text>
+
+  <path d="M500,415 L500,445" stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Bloc évaluation SLA -->
+  <rect x="330" y="450" width="340" height="55" rx="10" fill="#fff5f5" stroke="#c53030" stroke-width="1.5"/>
+  <text x="500" y="472" text-anchor="middle" font-size="14" font-weight="600" fill="#822727">Évaluation SLA / Hors-SLA</text>
+  <text x="500" y="490" text-anchor="middle" font-size="11" fill="#c53030">Seuils par type d'incident / technicien / plage horaire</text>
+
+  <path d="M500,505 L500,535" stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#arrow)"/>
+
+  <!-- Bloc restitution -->
+  <rect x="270" y="540" width="200" height="60" rx="10" fill="#f0fff4" stroke="#2f855a" stroke-width="1.5"/>
+  <text x="370" y="565" text-anchor="middle" font-size="13" font-weight="600" fill="#22543d">Export Excel</text>
+  <text x="370" y="583" text-anchor="middle" font-size="11" fill="#2f855a">Feuilles par axe d'analyse</text>
+
+  <rect x="530" y="540" width="200" height="60" rx="10" fill="#ebf8ff" stroke="#2b6cb0" stroke-width="1.5"/>
+  <text x="630" y="565" text-anchor="middle" font-size="13" font-weight="600" fill="#2a4365">Dashboard / Reporting</text>
+  <text x="630" y="583" text-anchor="middle" font-size="11" fill="#2b6cb0">Vue manager, suivi continu</text>
+
+  <path d="M500,535 L370,540" stroke="#4a5568" stroke-width="1.4" fill="none" marker-end="url(#arrow)"/>
+  <path d="M500,535 L630,540" stroke="#4a5568" stroke-width="1.4" fill="none" marker-end="url(#arrow)"/>
+</svg>
