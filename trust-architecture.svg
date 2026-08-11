@@ -1,0 +1,77 @@
+<svg viewBox="0 0 980 460" xmlns="http://www.w3.org/2000/svg" font-family="Segoe UI, Arial, sans-serif">
+  <defs>
+    <marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#4a5568"/>
+    </marker>
+  </defs>
+  <rect width="980" height="460" fill="#ffffff"/>
+
+  <text x="490" y="34" text-anchor="middle" font-size="20" font-weight="700" fill="#1a202c">Architecture de confiance — OAuth + Bring Your Own Storage</text>
+  <text x="490" y="54" text-anchor="middle" font-size="12" fill="#718096">Aucun mot de passe transmis · Aucune donnée centralisée chez le créateur du produit</text>
+
+  <!-- Utilisateur -->
+  <rect x="40" y="90" width="150" height="70" rx="10" fill="#edf2f7" stroke="#4a5568" stroke-width="1.5"/>
+  <text x="115" y="120" text-anchor="middle" font-size="13" font-weight="600" fill="#1a202c">Utilisateur</text>
+  <text x="115" y="138" text-anchor="middle" font-size="10" fill="#4a5568">Manager / Agent</text>
+
+  <!-- Module SLA GUARD -->
+  <rect x="255" y="90" width="180" height="70" rx="10" fill="#e6f0ff" stroke="#3b6fd6" stroke-width="1.5"/>
+  <text x="345" y="118" text-anchor="middle" font-size="13" font-weight="600" fill="#1a365d">Module SLA GUARD</text>
+  <text x="345" y="136" text-anchor="middle" font-size="10" fill="#2c5282">Aucun mot de passe stocké ici</text>
+
+  <!-- Service tiers -->
+  <rect x="500" y="90" width="220" height="70" rx="10" fill="#fff0e6" stroke="#d6733b" stroke-width="1.5"/>
+  <text x="610" y="112" text-anchor="middle" font-size="13" font-weight="600" fill="#7b341e">Service tiers (page officielle)</text>
+  <text x="610" y="130" text-anchor="middle" font-size="10" fill="#9c4221">Microsoft / Google / Genesys / Zendesk…</text>
+  <text x="610" y="146" text-anchor="middle" font-size="10" fill="#9c4221">C'est ici, et seulement ici, que le</text>
+  <text x="610" y="159" text-anchor="middle" font-size="10" fill="#9c4221">mot de passe est saisi</text>
+
+  <!-- Flèches horizontales -->
+  <path d="M190,125 L255,125" stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="222" y="115" text-anchor="middle" font-size="9" fill="#4a5568">1. Clique</text>
+
+  <path d="M435,110 L500,110" stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="467" y="100" text-anchor="middle" font-size="9" fill="#4a5568">2. Redirige</text>
+
+  <path d="M500,140 L435,140" stroke="#2f855a" stroke-width="1.8" fill="none" marker-end="url(#ar)"/>
+  <text x="467" y="155" text-anchor="middle" font-size="9" fill="#2f855a">4. Jeton d'accès limité</text>
+
+  <!-- Interaction directe utilisateur/service -->
+  <path d="M115,90 C115,20 610,20 610,90" stroke="#c53030" stroke-width="1.4" fill="none" stroke-dasharray="4,3" marker-end="url(#ar)"/>
+  <text x="360" y="18" text-anchor="middle" font-size="10" fill="#c53030">3. L'utilisateur saisit son mot de passe DIRECTEMENT sur le site officiel</text>
+
+  <!-- Vers destinations -->
+  <path d="M345,160 L345,220" stroke="#4a5568" stroke-width="1.6" fill="none" marker-end="url(#ar)"/>
+  <text x="345" y="240" text-anchor="middle" font-size="10" fill="#4a5568">5. Écrit le résultat directement</text>
+  <text x="345" y="254" text-anchor="middle" font-size="10" fill="#4a5568">chez le client, jamais sur un serveur</text>
+  <text x="345" y="268" text-anchor="middle" font-size="10" fill="#4a5568">du créateur du produit</text>
+
+  <!-- Bloc BYOS -->
+  <rect x="140" y="285" width="410" height="150" rx="12" fill="#f0fff4" stroke="#2f855a" stroke-width="1.5"/>
+  <text x="345" y="310" text-anchor="middle" font-size="13" font-weight="700" fill="#22543d">Bring Your Own Storage</text>
+  <text x="345" y="326" text-anchor="middle" font-size="10" fill="#2f855a">Le résultat part chez le client, jamais chez le créateur</text>
+
+  <rect x="160" y="340" width="110" height="50" rx="8" fill="#ffffff" stroke="#2f855a" stroke-width="1"/>
+  <text x="215" y="368" text-anchor="middle" font-size="11" font-weight="600" fill="#22543d">Excel local</text>
+
+  <rect x="290" y="340" width="110" height="50" rx="8" fill="#ffffff" stroke="#2f855a" stroke-width="1"/>
+  <text x="345" y="360" text-anchor="middle" font-size="11" font-weight="600" fill="#22543d">Google Sheets</text>
+  <text x="345" y="374" text-anchor="middle" font-size="9" fill="#2f855a">(compte du client)</text>
+
+  <rect x="420" y="340" width="110" height="50" rx="8" fill="#ffffff" stroke="#2f855a" stroke-width="1"/>
+  <text x="475" y="360" text-anchor="middle" font-size="11" font-weight="600" fill="#22543d">Power BI</text>
+  <text x="475" y="374" text-anchor="middle" font-size="9" fill="#2f855a">(tenant du client)</text>
+
+  <!-- Bloc conséquence sécurité -->
+  <rect x="600" y="220" width="330" height="215" rx="12" fill="#fff5f5" stroke="#c53030" stroke-width="1.5"/>
+  <text x="765" y="248" text-anchor="middle" font-size="13" font-weight="700" fill="#822727">En cas d'attaque contre le créateur</text>
+  <text x="765" y="264" text-anchor="middle" font-size="13" font-weight="700" fill="#822727">du produit</text>
+
+  <text x="620" y="292" font-size="11" fill="#822727">✗ Pas de mot de passe à voler</text>
+  <text x="620" y="316" font-size="11" fill="#822727">✗ Pas de contenu de mail/appel/ticket</text>
+  <text x="620" y="336" font-size="11" fill="#822727">   stocké de manière centralisée</text>
+  <text x="620" y="360" font-size="11" fill="#822727">✓ Seuls des jetons temporaires et</text>
+  <text x="620" y="378" font-size="11" fill="#822727">   la configuration transitent</text>
+  <text x="620" y="402" font-size="11" fill="#822727">✓ Révocable en 1 clic par le client,</text>
+  <text x="620" y="420" font-size="11" fill="#822727">   depuis son propre compte</text>
+</svg>
