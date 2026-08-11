@@ -2,7 +2,7 @@
 
 *Complément à la spec de configuration — répond au besoin : "l'user choisit juste un format et obtient directement ses chiffres", avec une profondeur de lecture qui va du global (20 secondes) jusqu'au détail complet.*
 
-![Niveau 1 - vue instantanée]() 
+![Niveau 1 - vue instantanée](drilldown-mockup.svg) 
 
 ---
 
